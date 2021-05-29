@@ -1,0 +1,45 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  embarkation: one
+  n_movimento: 1
+  porto_origem: MyString
+  porto_destino: MyString
+  armador: one
+  user: 
+  email: MyString
+  data_entrada: MyString
+  hora_entrada: MyString
+  data_saida: MyString
+  hora_saida: MyString
+  nome_comandante: MyString
+  estadia_prev: MyString
+  estadia_final: MyString
+  nacionalida: MyString
+  tipo_doc: MyString
+  n_doc: MyString
+  data_emissao: MyString
+  data_validade: MyString
+  status: 1
+
+two:
+  embarkation: two
+  n_movimento: 1
+  porto_origem: MyString
+  porto_destino: MyString
+  armador: two
+  user: 
+  email: MyString
+  data_entrada: MyString
+  hora_entrada: MyString
+  data_saida: MyString
+  hora_saida: MyString
+  nome_comandante: MyString
+  estadia_prev: MyString
+  estadia_final: MyString
+  nacionalida: MyString
+  tipo_doc: MyString
+  n_doc: MyString
+  data_emissao: MyString
+  data_validade: MyString
+  status: 1

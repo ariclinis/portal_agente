@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @delegation.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @delegation.endereco %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @delegation.tel %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @delegation.email %>
+</p>
+
+<p>
+  <strong>Cp:</strong>
+  <%= @delegation.cp %>
+</p>
+
+<p>
+  <strong>Provincia:</strong>
+  <%= @delegation.provincia %>
+</p>
+
+<p>
+  <strong>Municipio:</strong>
+  <%= @delegation.municipio %>
+</p>
+
+<p>
+  <strong>Comuna:</strong>
+  <%= @delegation.comuna %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @delegation.status %>
+</p>
+
+<%= link_to 'Edit', edit_delegation_path(@delegation) %> |
+<%= link_to 'Back', delegations_path %>

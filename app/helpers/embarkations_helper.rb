@@ -1,0 +1,2 @@
+module EmbarkationsHelper
+end

@@ -1,0 +1,2 @@
+json.extract! embarkation, :id, :nome, :matricula, :local_atracagem, :indicativo_chamada, :nr_imo, :data_contrucao, :estaleiro, :porto_registro, :bandeira_origem, :bandeira_actual, :tipo_embarcacao_id, :tipo_de_casco_id, :tipo_classificacao_id, :stado_da_embarcacao, :comprimento, :boca, :pontal, :tonelagem_bruto, :tonelagem_liquida, :lotacao, :nr_max_tripulante, :nr_min_tripulante, :capitao_id, :armador_id, :proprietario_id, :delegation_id, :status, :created_at, :updated_at
+json.url embarkation_url(embarkation, format: :json)

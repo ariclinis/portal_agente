@@ -1,0 +1,47 @@
+<%= form_with(model: armador, local: true) do |form| %>
+  <% if armador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(armador.errors.count, "error") %> prohibited this armador from being saved:</h2>
+
+      <ul>
+        <% armador.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tel %>
+    <%= form.text_field :tel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agente %>
+    <%= form.text_field :agente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pais %>
+    <%= form.text_field :pais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :morada %>
+    <%= form.text_area :morada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

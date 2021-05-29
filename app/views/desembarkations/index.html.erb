@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Desembarkations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Embarkation</th>
+      <th>N movimento</th>
+      <th>Porto origem</th>
+      <th>Porto destino</th>
+      <th>Armador</th>
+      <th>User</th>
+      <th>Email</th>
+      <th>Data entrada</th>
+      <th>Hora entrada</th>
+      <th>Data saida</th>
+      <th>Hora saida</th>
+      <th>Nome comandante</th>
+      <th>Estadia prev</th>
+      <th>Estadia final</th>
+      <th>Nacionalida</th>
+      <th>Tipo doc</th>
+      <th>N doc</th>
+      <th>Data emissao</th>
+      <th>Data validade</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @desembarkations.each do |desembarkation| %>
+      <tr>
+        <td><%= desembarkation.embarkation_id %></td>
+        <td><%= desembarkation.n_movimento %></td>
+        <td><%= desembarkation.porto_origem %></td>
+        <td><%= desembarkation.porto_destino %></td>
+        <td><%= desembarkation.armador_id %></td>
+        <td><%= desembarkation.user %></td>
+        <td><%= desembarkation.email %></td>
+        <td><%= desembarkation.data_entrada %></td>
+        <td><%= desembarkation.hora_entrada %></td>
+        <td><%= desembarkation.data_saida %></td>
+        <td><%= desembarkation.hora_saida %></td>
+        <td><%= desembarkation.nome_comandante %></td>
+        <td><%= desembarkation.estadia_prev %></td>
+        <td><%= desembarkation.estadia_final %></td>
+        <td><%= desembarkation.nacionalida %></td>
+        <td><%= desembarkation.tipo_doc %></td>
+        <td><%= desembarkation.n_doc %></td>
+        <td><%= desembarkation.data_emissao %></td>
+        <td><%= desembarkation.data_validade %></td>
+        <td><%= desembarkation.status %></td>
+        <td><%= link_to 'Show', desembarkation %></td>
+        <td><%= link_to 'Edit', edit_desembarkation_path(desembarkation) %></td>
+        <td><%= link_to 'Destroy', desembarkation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Desembarkation', new_desembarkation_path %>

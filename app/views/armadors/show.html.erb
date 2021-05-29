@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @armador.nome %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @armador.tel %>
+</p>
+
+<p>
+  <strong>Agente:</strong>
+  <%= @armador.agente %>
+</p>
+
+<p>
+  <strong>Pais:</strong>
+  <%= @armador.pais %>
+</p>
+
+<p>
+  <strong>Morada:</strong>
+  <%= @armador.morada %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @armador.status %>
+</p>
+
+<%= link_to 'Edit', edit_armador_path(@armador) %> |
+<%= link_to 'Back', armadors_path %>

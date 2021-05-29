@@ -1,0 +1,52 @@
+
+<!-- Main Content -->
+<div class="main-content">
+    <section class="section">
+      <div class="section-header">
+        <h1>Embarcações</h1>
+      </div>
+
+<p id="notice"><%= notice %></p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Matricula</th>
+      <th>Porto registro</th>
+      <th>Bandeira origem</th>
+      <th>Bandeira actual</th>
+      <th>Proprietario</th>
+      <th>estado Emba.</th>
+      <th>estado</th>
+      <th>estado</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @embarkations.each do |embarkation| %>
+      <tr>
+        <td><%= embarkation.nome %></td>
+        <td><%= embarkation.matricula %></td>
+        <td><%= embarkation.porto_registro %></td>
+        <td><%= embarkation.bandeira_origem %></td>
+        <td><%= embarkation.bandeira_actual %></td>
+        <td><%= embarkation.tipo_embarcacao_id %></td>
+
+        <td><%= embarkation.stado_da_embarcacao %></td>
+        <td><%= embarkation.proprietario_id %></td>
+        <td><%= embarkation.status %></td>
+        <td><%= link_to 'Show', embarkation %></td>
+        <td><%= link_to 'Edit', edit_embarkation_path(embarkation) %></td>
+        <td><%= link_to 'Destroy', embarkation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Embarkation', new_embarkation_path %>
+</section>
+</div>
+<br>
+
+

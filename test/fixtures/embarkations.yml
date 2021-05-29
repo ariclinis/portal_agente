@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  matricula: MyString
+  local_atracagem: MyString
+  indicativo_chamada: MyString
+  nr_imo: MyString
+  data_contrucao: MyString
+  estaleiro: MyString
+  porto_registro: MyString
+  bandeira_origem: MyString
+  bandeira_actual: MyString
+  tipo_embarcacao_id: 1
+  tipo_de_casco_id: 1
+  tipo_classificacao_id: 1
+  stado_da_embarcacao: 1
+  comprimento: 1.5
+  boca: 1.5
+  pontal: 1.5
+  tonelagem_bruto: MyString
+  tonelagem_liquida: MyString
+  lotacao: 1.5
+  nr_max_tripulante: 1.5
+  nr_min_tripulante: 1.5
+  capitao_id: 1
+  armador: one
+  proprietario_id: 1
+  delegation: one
+  status: 1
+
+two:
+  nome: MyString
+  matricula: MyString
+  local_atracagem: MyString
+  indicativo_chamada: MyString
+  nr_imo: MyString
+  data_contrucao: MyString
+  estaleiro: MyString
+  porto_registro: MyString
+  bandeira_origem: MyString
+  bandeira_actual: MyString
+  tipo_embarcacao_id: 1
+  tipo_de_casco_id: 1
+  tipo_classificacao_id: 1
+  stado_da_embarcacao: 1
+  comprimento: 1.5
+  boca: 1.5
+  pontal: 1.5
+  tonelagem_bruto: MyString
+  tonelagem_liquida: MyString
+  lotacao: 1.5
+  nr_max_tripulante: 1.5
+  nr_min_tripulante: 1.5
+  capitao_id: 1
+  armador: two
+  proprietario_id: 1
+  delegation: two
+  status: 1
