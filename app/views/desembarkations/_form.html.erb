@@ -10,108 +10,135 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :embarkation_id %>
-    <%= form.text_field :embarkation_id %>
+  
+<div class="row">
+  <div class=" form-group col-4">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, value: (Embarkation.find(desembarkation.embarkation_id).nome if desembarkation.embarkation_id), class:"form-control"  %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-4">
+    <%= form.label :imo_code, "IMO" %>
+    <%= form.text_field :imo_code, value: (Embarkation.find(desembarkation.embarkation_id).nr_imo if desembarkation.embarkation_id), class:"form-control" %>
+  </div>
+  
+    <%=form.hidden_field :embarkation_id, value: desembarkation.embarkation_id , class:"form-control"%>
+
+
+  <div class="field form-group col-4">
     <%= form.label :n_movimento %>
-    <%= form.number_field :n_movimento %>
+    <%= form.number_field :n_movimento, class:"form-control" %>
   </div>
+</div>
+<hr></hr>
 
-  <div class="field">
+<div class="row">
+  <div class="field form-group col-4">
     <%= form.label :porto_origem %>
-    <%= form.text_field :porto_origem %>
+    <%= form.text_field :porto_origem, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-4">
     <%= form.label :porto_destino %>
-    <%= form.text_field :porto_destino %>
+    <%= form.text_field :porto_destino, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-4">
     <%= form.label :armador_id %>
-    <%= form.text_field :armador_id %>
+    <%= form.select :armador_id, options_from_collection_for_select((Armador.where(:agente=>current_user.id)), "id", "nome")%>
+
   </div>
 
-  <div class="field">
-    <%= form.label :user %>
-    <%= form.text_field :user %>
-  </div>
+    <% form.label :user %>
+    <% form.text_field :user, class:"form-control" %>
 
-  <div class="field">
+</div>
+
+<div class="row">
+
+  <div class="field form-group col-6">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :data_entrada %>
-    <%= form.text_field :data_entrada %>
+  <div class="field form-group col-2">
+    <%= form.label :data_entrada, "Data previsão" %>
+    <%= form.text_field :data_entrada, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :hora_entrada %>
-    <%= form.text_field :hora_entrada %>
+  <div class="field form-group col-2">
+    <%= form.label :hora_entrada, "Hora previsão" %>
+    <%= form.text_field :hora_entrada, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :data_saida %>
-    <%= form.text_field :data_saida %>
+  <div class="">
+    <% form.label :data_saida %>
+    <% form.text_field :data_saida, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :hora_saida %>
-    <%= form.text_field :hora_saida %>
+  <div class="">
+    <% form.label :hora_saida %>
+    <% form.text_field :hora_saida, class:"form-control" %>
   </div>
-
-  <div class="field">
+</div>
+<div class="row">
+  <div class="field form-group col-6">
     <%= form.label :nome_comandante %>
-    <%= form.text_field :nome_comandante %>
+    <%= form.text_field :nome_comandante, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-6">
     <%= form.label :estadia_prev %>
-    <%= form.text_field :estadia_prev %>
+    <%= form.text_field :estadia_prev, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-6">
     <%= form.label :estadia_final %>
-    <%= form.text_field :estadia_final %>
+    <%= form.text_field :estadia_final, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :nacionalida %>
-    <%= form.text_field :nacionalida %>
+  <div class="field form-group col-6">
+    <%= form.label :nacionalida, "Nacionalidade" %>
+    <%= form.text_field :nacionalida, class:"form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="row">
+  <div class="field form-group col-3">
     <%= form.label :tipo_doc %>
-    <%= form.text_field :tipo_doc %>
+    <%= form.text_field :tipo_doc, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-3">
     <%= form.label :n_doc %>
-    <%= form.text_field :n_doc %>
+    <%= form.text_field :n_doc, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-3">
     <%= form.label :data_emissao %>
-    <%= form.text_field :data_emissao %>
+    <%= form.text_field :data_emissao, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group col-3">
     <%= form.label :data_validade %>
-    <%= form.text_field :data_validade %>
+    <%= form.text_field :data_validade, class:"form-control" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.number_field :status %>
-  </div>
+  
 
+    <% form.label :status %>
+    <% form.number_field :status, class:"form-control" %>
+</div>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Registrar", class:"btn btn-primary btn-lg btn-block" %>
   </div>
+
 <% end %>
+<script>  
+    window.onload = function() {
+      var a = document.getElementById("desembarkation_armador_id");
+      a.classList.add("form-control");
+      console.log(a)
+    }  
+</script> 

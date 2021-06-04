@@ -1,7 +1,12 @@
 <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Portal de Agentes</a>
+            <a href="index.html">SYNP Agentes</a>
+
+            <%= link_to destroy_user_session_path, :method => :delete do %>
+            <i class="bi bi-box-arrow-in-right"></i>
+
+            <% end %>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">St</a>
@@ -9,20 +14,20 @@
           <ul class="sidebar-menu">
               <li class="menu-header">Painel</li>
               <li class="nav-item dropdown active">
-                <a href="#" class="nav-link "><i class="fas fa-fire"></i><span>Painel de Controlo</span></a>
+                <a href="/" class="nav-link "><i class="fas fa-fire"></i><span>Painel de Controlo</span></a>
                 
               </li>
               <li class="menu-header">Embarcações</li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Gerenciar Embarcações</span></a>
+                <a href="/embarkations/" class="nav-link"><i class="fas fa-columns"></i> <span>Gerenciar Embarcações</span></a>
               </li>
-              <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Armadores</span></a></li>
+              <li><a class="nav-link" href="/armadors/"><i class="far fa-square"></i> <span>Armadores</span></a></li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link"><i class="fas fa-th"></i> <span>Aviso de Chegada</span></a>
+                <a href="/desembarkations" class="nav-link"><i class="fas fa-th"></i> <span>Aviso de Chegada</span></a>
               </li>
               <li class="menu-header">Configurações</li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link"><i class="fas fa-th-large"></i> <span>Agentes</span></a>
+                <a href="/agente/index" class="nav-link"><i class="fas fa-th-large"></i> <span>Agentes</span></a>
                
               </li>
               <li class="nav-item dropdown">
@@ -37,8 +42,8 @@
             </ul>
 
             <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-              <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                <i class="fas fa-rocket"></i> Documentation
+              <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                <i class="fas fa-rocket"></i> Suporte Técnico
               </a>
             </div>
         </aside>

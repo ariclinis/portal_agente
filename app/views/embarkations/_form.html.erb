@@ -10,143 +10,153 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<div class="row">
+  <div class=" form-group col-6">
     <%= form.label :nome %>
-    <%= form.text_field :nome %>
+    <%= form.text_field :nome, class:"form-control"  %>
   </div>
 
-  <div class="field">
+  <div class=" form-group col-3">
     <%= form.label :matricula %>
-    <%= form.text_field :matricula %>
+    <%= form.text_field :matricula, class:"form-control"  %>
   </div>
-
-  <div class="field">
-    <%= form.label :local_atracagem %>
-    <%= form.text_field :local_atracagem %>
-  </div>
-
-  <div class="field">
-    <%= form.label :indicativo_chamada %>
-    <%= form.text_field :indicativo_chamada %>
-  </div>
-
-  <div class="field">
+  <div class="field col-3">
     <%= form.label :nr_imo %>
-    <%= form.text_field :nr_imo %>
+    <%= form.text_field :nr_imo, class:"form-control" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :data_contrucao %>
-    <%= form.text_field :data_contrucao %>
-  </div>
-
-  <div class="field">
-    <%= form.label :estaleiro %>
-    <%= form.text_field :estaleiro %>
-  </div>
-
-  <div class="field">
+<div class="row"> 
+  <div class="field col-6">
     <%= form.label :porto_registro %>
-    <%= form.text_field :porto_registro %>
+    <%= form.text_field :porto_registro, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :bandeira_origem %>
-    <%= form.text_field :bandeira_origem %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bandeira_actual %>
-    <%= form.text_field :bandeira_actual %>
-  </div>
-
-  <div class="field">
+  <div class="field col-3">
     <%= form.label :tipo_embarcacao_id %>
-    <%= form.number_field :tipo_embarcacao_id %>
+    <%= form.number_field :tipo_embarcacao_id, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :tipo_de_casco_id %>
-    <%= form.number_field :tipo_de_casco_id %>
-  </div>
 
-  <div class="field">
+    <% form.label :tipo_de_casco_id %>
+    <% form.number_field :tipo_de_casco_id, class:"form-control" %>
+
+
+  <div class="field col-3">
     <%= form.label :tipo_classificacao_id %>
-    <%= form.number_field :tipo_classificacao_id %>
+    <%= form.number_field :tipo_classificacao_id, class:"form-control" %>
+  </div>
+</div>
+
+<div class="row">
+  
+      <% form.label :local_atracagem %>
+      <% form.text_field :local_atracagem, class:"form-control" %>
+  
+  
+
+  <div class="field col-6">
+    <%= form.label :bandeira_origem %>
+    <%= form.text_field :bandeira_origem, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :stado_da_embarcacao %>
-    <%= form.number_field :stado_da_embarcacao %>
-  </div>
-
-  <div class="field">
-    <%= form.label :comprimento %>
-    <%= form.text_field :comprimento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :boca %>
-    <%= form.text_field :boca %>
-  </div>
-
-  <div class="field">
-    <%= form.label :pontal %>
-    <%= form.text_field :pontal %>
-  </div>
-
-  <div class="field">
+  <div class="field col-3">
     <%= form.label :tonelagem_bruto %>
-    <%= form.text_field :tonelagem_bruto %>
+    <%= form.text_field :tonelagem_bruto, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field col-3">
     <%= form.label :tonelagem_liquida %>
-    <%= form.text_field :tonelagem_liquida %>
+    <%= form.text_field :tonelagem_liquida, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :lotacao %>
-    <%= form.text_field :lotacao %>
+  
+    <% form.label :bandeira_actual %>
+    <% form.text_field :bandeira_actual, class:"form-control" %>
+  
+</div>
+
+<div class="row">
+  <div class="field col-3">
+    <%= form.label :comprimento %>
+    <%= form.text_field :comprimento, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field col-3">
+    <%= form.label :pontal %>
+    <%= form.text_field :pontal, class:"form-control" %>
+  </div>
+
+<div class="field col-3">
     <%= form.label :nr_max_tripulante %>
-    <%= form.text_field :nr_max_tripulante %>
+    <%= form.text_field :nr_max_tripulant, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field col-3">
     <%= form.label :nr_min_tripulante %>
-    <%= form.text_field :nr_min_tripulante %>
+    <%= form.text_field :nr_min_tripulante, class:"form-control" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :capitao_id %>
-    <%= form.number_field :capitao_id %>
-  </div>
+<div class="row">
 
-  <div class="field">
-    <%= form.label :armador_id %>
-    <%= form.text_field :armador_id %>
-  </div>
+    <% form.label :boca %>
+    <% form.text_field :boca, class:"form-control" %>
 
-  <div class="field">
+
+  
+    <% form.label :lotacao %>
+    <% form.text_field :lotacao, class:"form-control" %>
+  
+
+  
+</div>
+
+<div class="row">
+    <% form.label :estaleiro %>
+    <% form.text_field :estaleiro, class:"form-control" %>
+ 
+
+  <div class="field col-6">
     <%= form.label :proprietario_id %>
-    <%= form.number_field :proprietario_id %>
+    <%= form.number_field :proprietario_id, class:"form-control" %>
+  </div>
+  <div class="field col-2">
+    <%= form.label :capitao_id %>
+    <%= form.number_field :capitao_id, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :delegation_id %>
-    <%= form.text_field :delegation_id %>
+  <div class="field col-2">
+    <%= form.label :indicativo_chamada %>
+    <%= form.text_field :indicativo_chamada, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.number_field :status %>
+  <div class="field col-2">
+    <%= form.label :data_contrucao %>
+    <%= form.text_field :data_contrucao, class:"form-control" %>
   </div>
 
+
+    <% form.label :armador_id %>
+    <% form.text_field :armador_id, class:"form-control" %>
+
+</div>
+
+  <div class="row">
+  
+    <% form.label :stado_da_embarcacao %>
+    <% form.number_field :stado_da_embarcacao, class:"form-control" %>
+
+  
+    <% form.label :delegation_id %>
+    <% form.text_field :delegation_id, class:"form-control" %>
+  </div>
+</div>
+  
+    <% form.label :status %>
+    <% form.number_field :status, class:"form-control" %>
+  
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Registrar", class:"btn btn-primary btn-lg btn-block" %>
   </div>
 <% end %>

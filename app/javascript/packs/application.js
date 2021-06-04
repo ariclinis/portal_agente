@@ -7,6 +7,8 @@
 //= require stisla
 //= require scripts
 //= require custom
+//= require jquery
+//= require jquery_ujs
 
 // ... other stuff
 require("@rails/ujs").start()

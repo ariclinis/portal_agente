@@ -1476,7 +1476,7 @@ jquery.nicescroll@^3.7.6:
   dependencies:
     jquery ">=1.8.3"
 
-jquery@>=1.10, jquery@>=1.7, jquery@>=1.8.3, jquery@>=2.2, jquery@^3.0, jquery@^3.1.1, jquery@^3.3.1:
+jquery@>=1.10, jquery@>=1.7, jquery@>=1.8.3, jquery@>=2.2, jquery@^3.0, jquery@^3.1.1, jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
@@ -1742,6 +1742,11 @@ node-forge@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
   integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
+
+nodejs@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/nodejs/-/nodejs-0.0.0.tgz#4722fa2e18ac4eb73a42ae16d01e3584a12b7531"
+  integrity sha1-RyL6LhisTrc6Qq4W0B41hKErdTE=
 
 normalize-path@^2.1.1:
   version "2.1.1"

@@ -1,5 +1,12 @@
-<h1>New Desembarkation</h1>
-
-<%= render 'form', desembarkation: @desembarkation %>
+<div class="main-content">
+    <section class="section">
+      <div class="section-header">
+        <h1>Aviso de chegada</h1>
+      </div>
+        <div class="card-body">
+            <%= render 'form', desembarkation: @desembarkation %>
+        </div>
 
 <%= link_to 'Back', desembarkations_path %>
+</section>
+</div>

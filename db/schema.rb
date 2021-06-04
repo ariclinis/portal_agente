@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_29_024100) do
+ActiveRecord::Schema.define(version: 2021_06_03_202055) do
 
   create_table "armadors", force: :cascade do |t|
     t.string "nome"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 2021_05_29_024100) do
     t.integer "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "dias_que_fica"
     t.index ["armador_id"], name: "index_desembarkations_on_armador_id"
     t.index ["embarkation_id"], name: "index_desembarkations_on_embarkation_id"
     t.index ["user_id"], name: "index_desembarkations_on_user_id"
